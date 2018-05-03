@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel');
+body {
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 100vh;
+    font-family: 'Cinzel', serif;
+    background: url("https://www.mcrent.eu/fileadmin/_processed_/f/6/csm_japan-slider-1_ad4364582c.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin: 50px 0;
+}
+
+.title h1 {
+    font-size: 40px;
+    color: white;
+    background-color: black;
+    width: 33%;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.nav button,
+.undo-button {
+    margin-right: 50px;
+    margin-bottom: 20px;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    border: 2px dotted #2957AD;
+    background-color: #0009;
+    font-family: 'Cinzel', serif;
+    font-size: 0.6em;
+    transition: 0.3s;
+    color: white;
+}
+
+.nav button:hover,
+.undo-button:hover {
+    background-color: #A41320;
+    color: white;
+    cursor: pointer;
+}
+
+.nav button:focus,
+.undo-button:focus {
+    outline: none;
+}
+
+.error-msg {
+    font-size: 18px;
+    display: inline-block;
+    width: 450px;
+    padding: 10px 0;
+    border: 2px solid #2957AD;
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    border: 3px solid #2957AD;
+    border-right: 1px solid #2957AD;
+    margin: 20px auto;
+}
+
+.undo-button {
+    margin: 0 auto;
+}
+
+.tile:nth-child(3n+3) {
+    border-right: 3px solid #2957AD;
+}
+
+.tile:nth-child(n+19) {
+    border-bottom: 3px solid #2957AD;
+}
+
+.tile:nth-child(n+28) {
+    border-bottom: 1px solid #2957AD;
+}
+
+.tile:nth-child(n+46) {
+    border-bottom: 3px solid #2957AD;
+}
+
+.tile:nth-child(n+55) {
+    border-bottom: 1px solid #2957AD;
+}
+
+.tile {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #2957AD;
+    font-size: 18px;
+}
+
+input:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+input:disabled {
+    background-color: #0006;
+    color: white;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:disabled:hover {
+    background-color: #0009;
+    cursor: auto;
+}
+
+input {
+    background-color: #86AADE;
+    color: white;
+}
