@@ -490,11 +490,13 @@ p {
 
 .worker {
     width: 25%;
+    min-width: 300px;
     margin: 1%;
     background-color: white;
     border-radius: 3px;
     padding-top: 40px;
     padding-bottom: 40px;
+
 }
 
 .worker img {
@@ -538,6 +540,7 @@ p {
 @media (max-width: 1200px) {
     .worker {
         width: 40%;
+        min-width: 300px;
         height: auto;
     }
 }
@@ -545,6 +548,7 @@ p {
 @media (max-width: 768px) {
     .worker {
         width: 60%;
+        min-width: 300px;
         height: auto;
     }
 }
